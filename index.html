@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nama Lengkap — Calon Guru SD</title>
+  <meta name="description" content="Portfolio Nama Lengkap, Calon Guru Sekolah Dasar — pengalaman mengajar, kompetensi, sertifikat, dan karya.">
+  <meta property="og:title" content="Nama Lengkap — Calon Guru SD">
+  <meta property="og:description" content="Portfolio calon guru SD bertema laut: pengalaman mengajar, kompetensi, sertifikat, dan karya.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#06182b">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="ocean-canvas"></canvas>
+  <div class="light-rays" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#home" class="nav__brand">🐠 Nama Lengkap</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#journey">Pendidikan &amp; Pengalaman</a></li>
+      <li><a href="#skills">Kompetensi</a></li>
+      <li><a href="#works">Karya</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="section hero">
+      <div class="hero__inner card">
+        <div class="hero__mascot" aria-hidden="true">
+          <svg viewBox="0 0 120 120" width="120" height="120">
+            <ellipse cx="55" cy="60" rx="34" ry="24" fill="#ff7e9d"/>
+            <polygon points="86,60 116,44 116,76" fill="#ff7e9d"/>
+            <circle cx="42" cy="52" r="6" fill="#041220"/><circle cx="40" cy="50" r="2" fill="#fff"/>
+            <path d="M34 70 q10 8 22 0" stroke="#041220" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <p class="hero__hi">Halo, perkenalkan 👋</p>
+        <h1 class="hero__name">Nama Lengkap</h1>
+        <p class="hero__role">Calon Guru Sekolah Dasar</p>
+        <p class="hero__tag">"Setiap anak adalah samudra potensi — tugas saya membantu mereka berani menyelam." <em>(ganti dengan filosofi mengajarmu)</em></p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="assets/cv/CV.pdf" download>⬇ Download CV</a>
+          <a class="btn btn--ghost" href="#contact">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">Scroll buat menyelam 🤿</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section__title">Tentang Saya 🐚</h2>
+      <div class="about card">
+        <div class="about__photo" aria-hidden="true">
+          <!-- ganti dengan <img src="assets/img/foto.jpg" alt="Foto Nama Lengkap"> -->
+          <span>Foto kamu di sini</span>
+        </div>
+        <div class="about__text">
+          <p>Halo! Saya <strong>Nama Lengkap</strong>, lulusan S1 PGSD [Nama Universitas]. [Tulis 2–3 kalimat tentang dirimu: kenapa memilih jadi guru SD, pendekatan mengajarmu, dan apa yang kamu sukai dari anak-anak.]</p>
+          <div class="about__philos">
+            <h3>Filosofi Mengajar</h3>
+            <p>[Tulis 1–2 kalimat filosofi mengajarmu, mis. "Saya percaya belajar paling efektif saat menyenangkan dan bermakna."]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="section">
+      <h2 class="section__title">Pendidikan &amp; Pengalaman 🐢</h2>
+      <ol class="timeline">
+        <li class="timeline__item card">
+          <span class="timeline__year">2021 — 2025</span>
+          <h3>S1 Pendidikan Guru Sekolah Dasar</h3>
+          <p class="timeline__where">[Nama Universitas] · IPK [x.xx]</p>
+          <p>[Fokus studi / pencapaian akademik singkat.]</p>
+        </li>
+        <li class="timeline__item card">
+          <span class="timeline__year">2024</span>
+          <h3>PPL / Magang Mengajar</h3>
+          <p class="timeline__where">[Nama SD]</p>
+          <p>[Apa yang kamu ajarkan, kelas berapa, hasil/refleksi singkat.]</p>
+        </li>
+        <li class="timeline__item card">
+          <span class="timeline__year">2023 — Sekarang</span>
+          <h3>Pengajar Les / Bimbel</h3>
+          <p class="timeline__where">[Tempat / privat]</p>
+          <p>[Mata pelajaran, jumlah murid, pendekatan.]</p>
+        </li>
+        <li class="timeline__item card">
+          <span class="timeline__year">2022</span>
+          <h3>Relawan Mengajar</h3>
+          <p class="timeline__where">[Komunitas/kegiatan]</p>
+          <p>[Peran &amp; dampak.]</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section__title">Kompetensi &amp; Keahlian 🪸</h2>
+      <div class="skills-grid">
+        <div class="card skillcard">
+          <h3>Mengajar &amp; Kurikulum</h3>
+          <ul class="chips"><li>Kurikulum Merdeka</li><li>Penyusunan RPP / Modul Ajar</li><li>Manajemen Kelas</li><li>Asesmen Pembelajaran</li></ul>
+        </div>
+        <div class="card skillcard">
+          <h3>Media &amp; Teknologi</h3>
+          <ul class="chips"><li>Media Pembelajaran Interaktif</li><li>Canva</li><li>PowerPoint</li><li>Pembelajaran Berbasis Permainan</li></ul>
+        </div>
+        <div class="card skillcard">
+          <h3>Soft Skill</h3>
+          <ul class="chips"><li>Sabar &amp; Telaten</li><li>Komunikatif</li><li>Kreatif</li><li>Empati pada Anak</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="section">
+      <h2 class="section__title">Sertifikat, Karya &amp; Galeri 🐙</h2>
+
+      <h3 class="works__sub">Sertifikat &amp; Penghargaan</h3>
+      <div class="works-grid">
+        <div class="card cert"><span class="cert__icon">🏅</span><div><strong>[Nama Sertifikat]</strong><p>[Penerbit · Tahun]</p></div></div>
+        <div class="card cert"><span class="cert__icon">📜</span><div><strong>[Nama Sertifikat]</strong><p>[Penerbit · Tahun]</p></div></div>
+        <div class="card cert"><span class="cert__icon">🏆</span><div><strong>[Penghargaan]</strong><p>[Penyelenggara · Tahun]</p></div></div>
+      </div>
+
+      <h3 class="works__sub">Karya (RPP / Media Ajar)</h3>
+      <div class="works-grid">
+        <a class="card work" href="#" onclick="return false"><div class="work__thumb">📘</div><strong>[Judul RPP/Modul]</strong><p>[Kelas / mapel]</p></a>
+        <a class="card work" href="#" onclick="return false"><div class="work__thumb">🎨</div><strong>[Media Pembelajaran]</strong><p>[Deskripsi singkat]</p></a>
+      </div>
+
+      <h3 class="works__sub">Galeri Kegiatan</h3>
+      <div class="gallery">
+        <button class="gallery__item" data-caption="Kegiatan mengajar 1">🖼️<span>Foto 1</span></button>
+        <button class="gallery__item" data-caption="Kegiatan mengajar 2">🖼️<span>Foto 2</span></button>
+        <button class="gallery__item" data-caption="Kegiatan mengajar 3">🖼️<span>Foto 3</span></button>
+        <button class="gallery__item" data-caption="Kegiatan mengajar 4">🖼️<span>Foto 4</span></button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="section__title">Hubungi Saya 🐠</h2>
+      <div class="card contact__card">
+        <p class="contact__lead">Tertarik berkolaborasi atau menawarkan posisi mengajar? Yuk ngobrol!</p>
+        <ul class="contact__list">
+          <li>📧 <a href="mailto:emailkamu@contoh.com">emailkamu@contoh.com</a></li>
+          <li>📱 <a href="https://wa.me/62xxxxxxxxxx" target="_blank" rel="noopener">+62 xxx-xxxx-xxxx (WhatsApp)</a></li>
+          <li>💼 <a href="https://linkedin.com/in/usernamekamu" target="_blank" rel="noopener">linkedin.com/in/usernamekamu</a></li>
+          <li>📍 [Kota domisili]</li>
+        </ul>
+        <a class="btn btn--primary" href="assets/cv/CV.pdf" download>⬇ Download CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Nama Lengkap · Dibuat dengan 🌊 &amp; ❤️</footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">✕</button>
+    <div class="lightbox__content"><div class="lightbox__img" id="lightboxImg">🖼️</div><p id="lightboxCap"></p></div>
+  </div>
+
+  <script src="js/ocean.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
