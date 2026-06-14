@@ -3,7 +3,7 @@
   --deep-1:#0a1a2f; --deep-2:#06182b; --deep-3:#041220;
   --coral:#ff7e9d; --sun:#ffd56b; --glow:#5fe0d8; --jelly:#9b8cff;
   --ink:#f4f9ff; --ink-soft:#a9c2d9;
-  --card:rgba(255,255,255,0.07); --card-border:rgba(255,255,255,0.14);
+  --card:rgba(6,22,38,0.55); --card-border:rgba(255,255,255,0.12);
   --font-head:'Fredoka', sans-serif; --font-body:'Nunito', sans-serif;
   --maxw:1100px;
 }
@@ -22,16 +22,6 @@ img{max-width:100%;display:block}
 
 /* ===== Background layers ===== */
 #ocean-canvas{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
-.light-rays{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden;opacity:.5}
-.light-rays::before,.light-rays::after{
-  content:"";position:absolute;top:-20%;left:50%;width:140%;height:140%;
-  background:repeating-linear-gradient(100deg,
-    transparent 0 60px, rgba(95,224,216,.06) 60px 90px, transparent 90px 160px);
-  transform:translateX(-50%) rotate(8deg);transform-origin:top center;
-  animation:rayDrift 16s ease-in-out infinite alternate;
-}
-.light-rays::after{animation-duration:24s;animation-direction:alternate-reverse;opacity:.6}
-@keyframes rayDrift{from{transform:translateX(-55%) rotate(6deg)}to{transform:translateX(-45%) rotate(12deg)}}
 
 main{position:relative;z-index:2}
 

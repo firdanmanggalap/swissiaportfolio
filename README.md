@@ -49,6 +49,16 @@ Atribut `data-src` membuat foto tampil besar (lightbox) saat diklik.
 ## 🎨 Mengubah warna / font
 Edit variabel di bagian atas `css/style.css` (`:root { ... }`).
 
+## 🤿 Background "menyelam"
+Background bereaksi ke scroll: makin ke bawah = makin dalam (permukaan → tengah → dasar laut).
+Kode-nya di `js/ocean/` (ES modules — **harus diakses lewat http**, bukan buka file langsung):
+- `depth.js` — warna air per kedalaman (ubah array `STOPS`).
+- `surface.js` — scene permukaan (matahari, pulau, kapal, burung).
+- `creatures.js` — makhluk per kedalaman (ubah `BANDS`: rentang `min`/`max` & `count`) + dasar laut (dumbo octopus, koral, peti).
+- `scene.js` — mesin: gradient air, sinar, glow, interaksi, performa.
+
+Tips debug: tambah `?depth=0.7` di URL buat memaksa tampilan kedalaman tertentu (mis. `localhost:5500/?depth=1` langsung lihat dasar laut).
+
 ## ☁️ Deploy
 
 - **Vercel:** import repo → Framework Preset: **Other** → Output Directory: **`./`** (root). Selesai.
