@@ -52,6 +52,35 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
   }
 
+  /* ---- Scroll reveal (fade-in saat section masuk layar) ---- */
+  const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealEls = [...document.querySelectorAll(
+    '.section__title, .about, .timeline__item, .skillcard, .cert, .work, .gallery__item, .contact__card'
+  )];
+  if (revealEls.length) {
+    if (prefersReduce || !('IntersectionObserver' in window)) {
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    } else {
+      revealEls.forEach((el) => el.classList.add('reveal'));
+      // Stagger item-item yang satu grid/list biar muncul beruntun
+      document.querySelectorAll('.timeline, .skills-grid, .works-grid, .gallery').forEach((group) => {
+        [...group.children].forEach((child, i) => {
+          if (child.classList.contains('reveal')) child.style.transitionDelay = `${i * 90}ms`;
+        });
+      });
+      const revObs = new IntersectionObserver((entries, o) => {
+        entries.forEach((en) => {
+          // Reveal saat masuk layar, atau kalau ke-skip (sudah lewat ke atas) pas scroll cepat.
+          if (en.isIntersecting || en.boundingClientRect.bottom < 0) {
+            en.target.classList.add('is-visible');
+            o.unobserve(en.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -12% 0px', threshold: 0.1 });
+      revealEls.forEach((el) => revObs.observe(el));
+    }
+  }
+
   /* ---- Footer year ---- */
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
