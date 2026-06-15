@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nama Lengkap — Calon Guru SD</title>
-  <meta name="description" content="Portfolio Nama Lengkap, Calon Guru Sekolah Dasar — pengalaman mengajar, kompetensi, sertifikat, dan karya.">
-  <meta property="og:title" content="Nama Lengkap — Calon Guru SD">
-  <meta property="og:description" content="Portfolio calon guru SD bertema laut: pengalaman mengajar, kompetensi, sertifikat, dan karya.">
+  <title>Swissia Viendyana — Calon Guru SD</title>
+  <meta name="description" content="Portfolio Swissia Viendyana — mahasiswa Pendidikan Guru Sekolah Dasar (BINUS University). Pengalaman mengajar, media pembelajaran kreatif, proyek, sertifikat, dan kontak.">
+  <meta property="og:title" content="Swissia Viendyana — Calon Guru SD">
+  <meta property="og:description" content="Portfolio calon guru SD bertema laut: pengalaman mengajar, media pembelajaran kreatif (animasi, AR/VR, game), sertifikat, dan karya.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#06182b">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -19,13 +19,15 @@
   <canvas id="ocean-canvas"></canvas>
 
   <nav class="nav" id="nav">
-    <a href="#home" class="nav__brand">🐠 Nama Lengkap</a>
+    <a href="#home" class="nav__brand">🐠 Swissia Viendyana</a>
     <button class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
     <ul class="nav__links" id="navLinks">
       <li><a href="#about">Tentang</a></li>
-      <li><a href="#journey">Pendidikan &amp; Pengalaman</a></li>
+      <li><a href="#journey">Pengalaman</a></li>
       <li><a href="#skills">Kompetensi</a></li>
-      <li><a href="#works">Karya</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#teaching">Mengajar</a></li>
+      <li><a href="#certificates">Sertifikat</a></li>
       <li><a href="#contact">Kontak</a></li>
     </ul>
   </nav>
@@ -43,11 +45,11 @@
           </svg>
         </div>
         <p class="hero__hi">Halo, perkenalkan 👋</p>
-        <h1 class="hero__name">Nama Lengkap</h1>
-        <p class="hero__role">Calon Guru Sekolah Dasar</p>
-        <p class="hero__tag">"Setiap anak adalah samudra potensi — tugas saya membantu mereka berani menyelam." <em>(ganti dengan filosofi mengajarmu)</em></p>
+        <h1 class="hero__name">Swissia Viendyana</h1>
+        <p class="hero__role">Calon Guru Sekolah Dasar · Primary Teacher Education, BINUS University</p>
+        <p class="hero__tag">"Setiap anak belajar dengan caranya sendiri dan berhak mendapat kesempatan untuk mengeksplorasi potensinya."</p>
         <div class="hero__cta">
-          <a class="btn btn--primary" href="assets/cv/CV.pdf" download>⬇ Download CV</a>
+          <a class="btn btn--primary" href="#projects">Lihat Karya Saya</a>
           <a class="btn btn--ghost" href="#contact">Hubungi Saya</a>
         </div>
       </div>
@@ -58,47 +60,59 @@
     <section id="about" class="section">
       <h2 class="section__title">Tentang Saya 🐚</h2>
       <div class="about card">
-        <div class="about__photo" aria-hidden="true">
-          <!-- ganti dengan <img src="assets/img/foto.jpg" alt="Foto Nama Lengkap"> -->
-          <span>Foto kamu di sini</span>
+        <div class="about__photo">
+          <img src="assets/img/swissia.jpg" alt="Foto Swissia Viendyana">
         </div>
         <div class="about__text">
-          <p>Halo! Saya <strong>Nama Lengkap</strong>, lulusan S1 PGSD [Nama Universitas]. [Tulis 2–3 kalimat tentang dirimu: kenapa memilih jadi guru SD, pendekatan mengajarmu, dan apa yang kamu sukai dari anak-anak.]</p>
+          <p>Halo! Saya <strong>Swissia Viendyana</strong>, mahasiswa S1 Pendidikan Guru Sekolah Dasar (Primary Teacher Education) di BINUS University. Saya tertarik menciptakan pengalaman belajar yang bermakna — memadukan pedagogi yang kuat dengan kreativitas. Bagi saya, pendidikan bukan sekadar mentransfer pengetahuan, tetapi juga menumbuhkan rasa ingin tahu, berpikir kritis, dan kolaborasi.</p>
+          <p>Saya percaya setiap anak belajar dengan caranya sendiri dan berhak mengeksplorasi potensinya. Karena itu saya merancang pembelajaran dan media yang interaktif, inklusif, dan menyenangkan. Latar belakang saya di bidang mengajar, mentoring, serta proyek digital kreatif seperti animasi, AR/VR, dan desain grafis mendukung tujuan saya membuat pembelajaran yang menarik sekaligus berdampak.</p>
           <div class="about__philos">
             <h3>Filosofi Mengajar</h3>
-            <p>[Tulis 1–2 kalimat filosofi mengajarmu, mis. "Saya percaya belajar paling efektif saat menyenangkan dan bermakna."]</p>
+            <p>Sebagai calon guru, saya ingin menjadi bukan hanya pengajar, tetapi juga fasilitator, motivator, dan teladan bagi murid-murid saya.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- JOURNEY -->
+    <!-- JOURNEY: Education & Experience -->
     <section id="journey" class="section">
       <h2 class="section__title">Pendidikan &amp; Pengalaman 🐢</h2>
       <ol class="timeline">
         <li class="timeline__item card">
-          <span class="timeline__year">2021 — 2025</span>
+          <span class="timeline__year">Pendidikan</span>
           <h3>S1 Pendidikan Guru Sekolah Dasar</h3>
-          <p class="timeline__where">[Nama Universitas] · IPK [x.xx]</p>
-          <p>[Fokus studi / pencapaian akademik singkat.]</p>
+          <p class="timeline__where">BINUS University · Fakultas Humaniora</p>
+          <p>Mahasiswa Primary Teacher Education. Masuk <strong>Dean's List 2024</strong> atas pencapaian akademik yang menonjol.</p>
         </li>
         <li class="timeline__item card">
-          <span class="timeline__year">2024</span>
-          <h3>PPL / Magang Mengajar</h3>
-          <p class="timeline__where">[Nama SD]</p>
-          <p>[Apa yang kamu ajarkan, kelas berapa, hasil/refleksi singkat.]</p>
+          <span class="timeline__year">Perancang Kurikulum</span>
+          <h3>Curriculum Designer — Sakola Kembara</h3>
+          <p class="timeline__where">Inisiatif nirlaba · pendidikan gratis</p>
+          <p>Merancang dan mengembangkan program belajar untuk Sakola Kembara, yang menyediakan pendidikan gratis bagi siswa tanpa akses bimbel berbayar. Membuat lesson plan, materi belajar, asesmen, dan latihan soal UTBK dengan menjaga relevansi serta keterlibatan siswa.</p>
         </li>
         <li class="timeline__item card">
-          <span class="timeline__year">2023 — Sekarang</span>
-          <h3>Pengajar Les / Bimbel</h3>
-          <p class="timeline__where">[Tempat / privat]</p>
-          <p>[Mata pelajaran, jumlah murid, pendekatan.]</p>
+          <span class="timeline__year">Guru Relawan</span>
+          <h3>Volunteer Preschool Teacher</h3>
+          <p class="timeline__where">Pendidikan Anak Usia Dini</p>
+          <p>Mendukung pendidikan anak usia dini dengan merancang dan menyampaikan pembelajaran yang menarik: literasi dasar, numerasi, dan aktivitas kreatif, sambil membangun lingkungan belajar yang menyenangkan. Memperkuat kesabaran, adaptasi, dan komunikasi.</p>
         </li>
         <li class="timeline__item card">
-          <span class="timeline__year">2022</span>
-          <h3>Relawan Mengajar</h3>
-          <p class="timeline__where">[Komunitas/kegiatan]</p>
-          <p>[Peran &amp; dampak.]</p>
+          <span class="timeline__year">Kepemimpinan</span>
+          <h3>Freshmen Leader</h3>
+          <p class="timeline__where">BINUS University</p>
+          <p>Membimbing dan mendampingi mahasiswa baru saat orientasi dan transisi ke kehidupan kampus; memfasilitasi aktivitas kelompok, workshop, dan diskusi untuk membangun rasa kebersamaan.</p>
+        </li>
+        <li class="timeline__item card">
+          <span class="timeline__year">Mentoring</span>
+          <h3>Freshmen Partner</h3>
+          <p class="timeline__where">BINUS University</p>
+          <p>Memberi pendampingan satu tahun penuh untuk mahasiswa baru sebagai mentor dan teman sebaya — lewat check-in rutin, diskusi 1-on-1, dan berbagi sumber daya untuk mendukung adaptasi dan perkembangan mereka.</p>
+        </li>
+        <li class="timeline__item card">
+          <span class="timeline__year">Event</span>
+          <h3>Concert Usher — KAT 9.0</h3>
+          <p class="timeline__where">Konser musik klasik</p>
+          <p>Membantu pengalaman penonton: menyambut tamu, mengarahkan ke tempat duduk, dan memberikan informasi acara, sambil mendukung kelancaran penyelenggaraan.</p>
         </li>
       </ol>
     </section>
@@ -108,43 +122,89 @@
       <h2 class="section__title">Kompetensi &amp; Keahlian 🪸</h2>
       <div class="skills-grid">
         <div class="card skillcard">
-          <h3>Mengajar &amp; Kurikulum</h3>
-          <ul class="chips"><li>Kurikulum Merdeka</li><li>Penyusunan RPP / Modul Ajar</li><li>Manajemen Kelas</li><li>Asesmen Pembelajaran</li></ul>
+          <h3>Kurikulum &amp; Pengajaran</h3>
+          <ul class="chips"><li>Kurikulum Merdeka</li><li>Kurikulum 2013 (K13)</li><li>IB Curriculum</li><li>Penyusunan RPP / Lesson Plan</li><li>Inquiry-based Learning</li><li>Asesmen Pembelajaran</li><li>Manajemen Kelas</li></ul>
         </div>
         <div class="card skillcard">
-          <h3>Media &amp; Teknologi</h3>
-          <ul class="chips"><li>Media Pembelajaran Interaktif</li><li>Canva</li><li>PowerPoint</li><li>Pembelajaran Berbasis Permainan</li></ul>
+          <h3>Media &amp; Teknologi Pembelajaran</h3>
+          <ul class="chips"><li>Blender (3D)</li><li>Adobe Premiere Pro</li><li>Scratch</li><li>Roblox Studio (Lua)</li><li>Media AR / VR</li><li>Microsoft Office</li></ul>
         </div>
         <div class="card skillcard">
-          <h3>Soft Skill</h3>
-          <ul class="chips"><li>Sabar &amp; Telaten</li><li>Komunikatif</li><li>Kreatif</li><li>Empati pada Anak</li></ul>
+          <h3>Bahasa &amp; Soft Skill</h3>
+          <ul class="chips"><li>English C-Level (Beelingua)</li><li>Komunikatif</li><li>Kreatif</li><li>Sabar &amp; Telaten</li><li>Empati pada Anak</li><li>Kolaborasi</li></ul>
         </div>
       </div>
     </section>
 
-    <!-- WORKS -->
-    <section id="works" class="section">
-      <h2 class="section__title">Sertifikat, Karya &amp; Galeri 🐙</h2>
-
-      <h3 class="works__sub">Sertifikat &amp; Penghargaan</h3>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section__title">Proyek &amp; Karya Kreatif 🐙</h2>
+      <p class="works__sub">Media pembelajaran interaktif: game edukasi, animasi, dan VR.</p>
       <div class="works-grid">
-        <div class="card cert"><span class="cert__icon">🏅</span><div><strong>[Nama Sertifikat]</strong><p>[Penerbit · Tahun]</p></div></div>
-        <div class="card cert"><span class="cert__icon">📜</span><div><strong>[Nama Sertifikat]</strong><p>[Penerbit · Tahun]</p></div></div>
-        <div class="card cert"><span class="cert__icon">🏆</span><div><strong>[Penghargaan]</strong><p>[Penyelenggara · Tahun]</p></div></div>
+        <a class="card work" href="https://scratch.mit.edu/projects/1235322595" target="_blank" rel="noopener">
+          <div class="work__thumb">🎮</div>
+          <strong>Kuci and the Energy of the World ↗</strong>
+          <p>Game edukasi di Scratch tentang energi terbarukan (air, angin, matahari). Pemain mengendalikan Kuci menelusuri labirin dan mengumpulkan orb energi untuk menyalakan kembali dunia.</p>
+        </a>
+        <div class="card work">
+          <div class="work__thumb">🧊</div>
+          <strong>Ice Cube Rescue — Math Game</strong>
+          <p>Mini-game matematika: selesaikan soal untuk menyelamatkan hewan laut yang terjebak dalam balok es. Melatih problem-solving lewat permainan yang seru.</p>
+        </div>
+        <a class="card work" href="https://www.youtube.com/watch?v=2foSj8Wcg3U" target="_blank" rel="noopener">
+          <div class="work__thumb">🔭</div>
+          <strong>Science Video — Gerhana Matahari ↗</strong>
+          <p>Animasi sains: karakter kucing "Kuci" menjelaskan apakah aman melihat gerhana matahari secara langsung — membuat sains menyenangkan, mudah dipahami, dan aman.</p>
+        </a>
+        <a class="card work" href="https://youtu.be/rg6LY64gsDc" target="_blank" rel="noopener">
+          <div class="work__thumb">🎬</div>
+          <strong>Perjalanan Indonesia Menuju Kemerdekaan ↗</strong>
+          <p>Animasi edukasi sejarah kemerdekaan Indonesia, dipandu maskot kucing. Karya ini telah tercatat Hak Cipta di Kemenkumham RI.</p>
+        </a>
+        <a class="card work" href="https://orbix360.com/rxlkTER-7" target="_blank" rel="noopener">
+          <div class="work__thumb">🧬</div>
+          <strong>VR Learning Media — Sistem Pencernaan ↗</strong>
+          <p>Media pembelajaran VR yang mengenalkan sistem pencernaan manusia secara imersif: jelajahi tiap organ, fungsinya, dan penyakit yang umum terjadi.</p>
+        </a>
+        <a class="card work" href="https://youtu.be/rY4wILTwJXY" target="_blank" rel="noopener">
+          <div class="work__thumb">📺</div>
+          <strong>Alino and the World of Advertising ↗</strong>
+          <p>Animasi edukasi dengan karakter Alino yang mengenalkan konsep iklan kepada siswa — tujuan, struktur, dan dampaknya — lewat cerita dan visual.</p>
+        </a>
+        <div class="card work">
+          <div class="work__thumb">🏛️</div>
+          <strong>Cultural Heritage Miniature</strong>
+          <p>Proyek tim membuat miniatur warisan budaya Sulawesi Barat — Rumah Adat Boyang, alat musik tradisional, dan busana adat — untuk melestarikan budaya secara kreatif.</p>
+        </div>
       </div>
+    </section>
 
-      <h3 class="works__sub">Karya (RPP / Media Ajar)</h3>
+    <!-- TEACHING -->
+    <section id="teaching" class="section">
+      <h2 class="section__title">Praktik Mengajar 🐡</h2>
       <div class="works-grid">
-        <a class="card work" href="#" onclick="return false"><div class="work__thumb">📘</div><strong>[Judul RPP/Modul]</strong><p>[Kelas / mapel]</p></a>
-        <a class="card work" href="#" onclick="return false"><div class="work__thumb">🎨</div><strong>[Media Pembelajaran]</strong><p>[Deskripsi singkat]</p></a>
+        <a class="card work" href="https://drive.google.com/drive/u/2/folders/1LA8zri3bdLzCYvgqXfgUr58G_81kDiBx" target="_blank" rel="noopener">
+          <div class="work__thumb">👩‍🏫</div>
+          <strong>Micro Teaching — "Make a T-Shirt" ↗</strong>
+          <p>Sesi micro-teaching matematika berbasis kurikulum IB. Lewat role-play membuka toko pakaian, siswa menerapkan budgeting, perhitungan laba, dan analisis biaya dalam konteks nyata. <em>(Klik untuk video)</em></p>
+        </a>
+        <a class="card work" href="https://drive.google.com/drive/folders/11fGwUIarOm6pMP2iWwC_r-eD5MA9olQv?usp=share_link" target="_blank" rel="noopener">
+          <div class="work__thumb">📘</div>
+          <strong>Lesson Plan (RPP) ↗</strong>
+          <p>Beberapa RPP dirancang untuk kurikulum IB, K13, dan Kurikulum Merdeka — masing-masing disesuaikan dengan tujuan belajar, pendekatan mengajar, dan metode asesmennya. <em>(Klik untuk dokumen)</em></p>
+        </a>
       </div>
+    </section>
 
-      <h3 class="works__sub">Galeri Kegiatan</h3>
-      <div class="gallery">
-        <button class="gallery__item" data-caption="Kegiatan mengajar 1">🖼️<span>Foto 1</span></button>
-        <button class="gallery__item" data-caption="Kegiatan mengajar 2">🖼️<span>Foto 2</span></button>
-        <button class="gallery__item" data-caption="Kegiatan mengajar 3">🖼️<span>Foto 3</span></button>
-        <button class="gallery__item" data-caption="Kegiatan mengajar 4">🖼️<span>Foto 4</span></button>
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section">
+      <h2 class="section__title">Sertifikat &amp; Penghargaan 🏅</h2>
+      <div class="works-grid">
+        <div class="card cert"><span class="cert__icon">🎤</span><div><strong>Presenter — ICISS 2025</strong><p>International Conference on ICT for Smart Society 2025, Institut Teknologi Bandung · Paper: "Analyzing the Effectiveness of Generative AI in Providing Learning Support"</p></div></div>
+        <div class="card cert"><span class="cert__icon">🏅</span><div><strong>Dean's List 2024</strong><p>Fakultas Humaniora, BINUS University — pencapaian akademik di Primary Teacher Education</p></div></div>
+        <div class="card cert"><span class="cert__icon">📜</span><div><strong>Hak Cipta (Copyright)</strong><p>"Video Animasi Perjalanan Indonesia Menuju Kemerdekaan" · Kemenkumham RI (No. 000926362)</p></div></div>
+        <div class="card cert"><span class="cert__icon">🏆</span><div><strong>Digistar Connect Goes to BINUS</strong><p>Telkom Indonesia × Google Developer Student Clubs · 2024</p></div></div>
+        <div class="card cert"><span class="cert__icon">🗣️</span><div><strong>English C-Level — Beelingua</strong><p>BINUS University, 2024 — Market Research &amp; Business Communication, Advanced English, Creative Writing, Professional Office</p></div></div>
       </div>
     </section>
 
@@ -154,23 +214,17 @@
       <div class="card contact__card">
         <p class="contact__lead">Tertarik berkolaborasi atau menawarkan posisi mengajar? Yuk ngobrol!</p>
         <ul class="contact__list">
-          <li>📧 <a href="mailto:emailkamu@contoh.com">emailkamu@contoh.com</a></li>
-          <li>📱 <a href="https://wa.me/62xxxxxxxxxx" target="_blank" rel="noopener">+62 xxx-xxxx-xxxx (WhatsApp)</a></li>
-          <li>💼 <a href="https://linkedin.com/in/usernamekamu" target="_blank" rel="noopener">linkedin.com/in/usernamekamu</a></li>
-          <li>📍 [Kota domisili]</li>
+          <li>📧 <a href="mailto:viendyanaswissia@gmail.com">viendyanaswissia@gmail.com</a></li>
+          <li>📱 <a href="tel:+625171736935">+62 5171736935</a></li>
+          <li>💼 <a href="https://www.linkedin.com/in/swissia-viendyana-53b4a0387" target="_blank" rel="noopener">LinkedIn — Swissia Viendyana</a></li>
+          <li>📍 Bekasi, Jawa Barat</li>
         </ul>
-        <a class="btn btn--primary" href="assets/cv/CV.pdf" download>⬇ Download CV</a>
+        <a class="btn btn--primary" href="mailto:viendyanaswissia@gmail.com">📧 Kirim Email</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">© <span id="year"></span> Nama Lengkap · Dibuat dengan 🌊 &amp; ❤️</footer>
-
-  <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox__close" id="lightboxClose" aria-label="Tutup">✕</button>
-    <div class="lightbox__content"><div class="lightbox__img" id="lightboxImg">🖼️</div><p id="lightboxCap"></p></div>
-  </div>
+  <footer class="footer">© <span id="year"></span> Swissia Viendyana · Dibuat dengan 🌊 &amp; ❤️</footer>
 
   <script type="module" src="js/ocean.js"></script>
   <script src="js/main.js" defer></script>
